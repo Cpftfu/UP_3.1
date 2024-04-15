@@ -18,13 +18,13 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <DataGrid x:Name="fullDataGrid" Grid.Row="1" Margin="15,0,15,0" AutoGenerateColumns="False" >
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Имя Клиента" Binding="{Binding Clients.ClientName}" />
-                <DataGridTextColumn Header="Фамилия Клиента" Binding="{Binding Clients.ClientSurname}" />
-                <DataGridTextColumn Header="Отчество Клиента" Binding="{Binding Clients.ClientMiddlename}" />
-                <DataGridTextColumn Header="Номер Телефона" Binding="{Binding Clients.PhoneNumber}" />
-                <DataGridTextColumn Header="Дата Заказа" Binding="{Binding Orders.OrderDate}" />
-            </DataGrid.Columns>
-        </DataGrid>
+          <DataGrid.Columns>
+              <DataGridTextColumn Binding="{Binding OrderDate}" Header="Дата Заказа" />
+              <DataGridTextColumn Binding="{Binding Clients.ClientName}" Header="Имя Клиента"/>
+              <DataGridTextColumn Binding="{Binding Clients.ClientSurname}" Header="Фамилия Клиента"/>
+              <DataGridTextColumn Binding="{Binding Clients.ClientMiddlename}" Header="Отчество Клиента"/>
+              <DataGridTextColumn Binding="{Binding Clients.PhoneNumber}" Header="Номер Телефона" />
+          </DataGrid.Columns>
+      </DataGrid>
     </Grid>
 </Page>
