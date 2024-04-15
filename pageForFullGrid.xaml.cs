@@ -25,7 +25,7 @@ namespace UP_3._1
 		public pageForFullGrid()
 		{
 			InitializeComponent();
-			fullDataGrid.ItemsSource = context.Clients.ToList();
+			fullDataGrid.ItemsSource = context.Orders.ToList();
 		}
 	}
 }
